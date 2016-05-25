@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <lang="fr">
   <head>
-    <title>Space Balls</title>
+    <title>Rézo Social</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" media="screen" type="text/css" title="Space Balls" href="main.css" >
-    <link href='https://fonts.googleapis.com/css?family=Cherry+Swash:400,700' rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" media="screen" type="text/css" title="Rézo Social" href="main.css" >
+    <!-- <link href='https://fonts.googleapis.com/css?family=Cherry+Swash:400,700' rel="stylesheet" type="text/css" /> -->
     <script type="text/javascript" src="rezosocial.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
   </head>
 
   <body>
-    <h1>Intercom 1709D</h1>
-    <h3>Réseau Social du 3e millénaire</h3>
+    <div class="header">
+      <div class="rezosocial floating-box">
+        <h1>Rézo Social</h1>
+        <h4>Réseau Social du 3e millénaire</h4>
+      </div>
 
-    <h4>Inscription :</h4>
-    <p>Nom :</p></p>
-    <p>Prénom :</p>
-    <p>email :</p>
-    <p>Login :</p>
-    <p>Mot de passe :</p>
-    <p>Confirmer le mot de passe :</p>
-    pseudonyme
-    mail
-    coordonnées
-    nom
-    genre
-    photo
-    prénom
-    age
-    présentation
-    préférences...
+      <div class="connexion floating-box">
+        <form action="connexion.js" method="get">
+          Login : <input type="text" name="pseudo" />
+          Mot de passe : <input type="password" name="mdp" />
+          <input type="submit" value="Connexion">
+        </form>
+      </div>
+    </div>
 
+    <div id="inscription">
+      <h3>Inscription</h3>
+      <form method="get">
+        <p>Email : <input id="email" type="mail" name="email" required></p>
+        <p>Mot de passe : <input id="mdp" type="password" name="mdp" required></p><br />
+        <input id="inscriptionButton" type="submit" value="Inscription">
+      </form>
+      <div id="inscriptionSuite">
+        <p>Nom :</p>
+        <p>Prénom :</p>
+        <p>Login :</p>
+        <p>Confirmer le mot de passe :</p>
+        <p>pseudonyme</p>
+        <p>mail</p>
+        <p>coordonnées</p>
+        <p>nom</p>
+        <p>genre</p>
+        <p>photo</p>
+        <p>prénom</p>
+        <p>age</p>
+        <p>présentation</p>
+        <p>préférences...</p>
+      </div>
+    </div>
 
-    <h4>Connexion :</h4>
-    <p>Login :</p>
-    <p>Mot de passe :</p>
+    <script>
+      $('#inscriptionSuite').hide();
+
+      // variables d'input
+      var email = document.getElementById('email');
+      var mdp = document.getElementById('mdp');
+
+      $("#inscriptionButton").click(function(){
+        if (email==='' && mdp===''){
+          alert("Vous devez indiquer un email et un mot de passe");
+        } else {
+        $('#inscriptionSuite').show();
+      };
+      });
+    </script>
 
   </body>
 </html>

@@ -1,0 +1,35 @@
+
+html, body, h1, h2, h3, h4, p{
+  font-family: sans-serif, arial, helvetica, franklin-gothic;
+  margin: 0px;
+  padding: 0px;
+  color: blue;
+}
+.header{
+  background-color: lightblue;
+  padding: 0% 3%;
+}
+.floating-box{
+  display: inline-block;
+}
+.rezosocial{
+}
+.connexion{
+  float: right;
+}
+#inscription{
+  margin: 5% auto auto 40%;
+}
+#inscriptionSuite{
+
+}
+h1, h2, h3{
+  padding: 15px 0px 0px 0px;
+}
+h4{
+  padding: 0px;
+}
+p{
+  padding: 5px 0px 0px 0px;
+  font-size: 0.8em;
+}
