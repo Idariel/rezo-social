@@ -1,0 +1,10 @@
+{
+  "name": "rezo-social",
+  "private": true,
+  "engines": {
+    "node": "4.2.4"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
