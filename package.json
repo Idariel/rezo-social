@@ -1,10 +1,19 @@
 {
   "name": "rezo-social",
-  "private": true,
-  "engines": {
-    "node": "4.2.4"
+  "version": "1.0.0",
+  "description": "Embryon de réseau social pour le dernier atelier de la formation DIW JS 2e session",
+  "main": "rezosocial.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "express": "^4.13.4"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Idariel/rezo-social.git"
+  },
+  "author": "Isabelle Lechat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Idariel/rezo-social/issues"
+  },
+  "homepage": "https://github.com/Idariel/rezo-social#readme"
 }
