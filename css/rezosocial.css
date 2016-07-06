@@ -5,31 +5,31 @@ html, body, h1, h2, h3, h4, p{
   padding: 0px;
   color: blue;
 }
-.header{
+/*.header{
   background-color: lightblue;
   padding: 0% 3%;
-}
+}*/
 .floating-box{
   display: inline-block;
 }
 .rezosocial{
 }
 .connexion{
-  float: right;
+  /*float: right;*/
 }
-#inscription{
-  margin: 5% auto auto 40%;
+.inscription{
+  /*margin: 5% auto auto 40%;*/
 }
-#inscriptionSuite{
+.inscriptionSuite{
 
 }
-h1, h2, h3{
+/*h1, h2, h3{
   padding: 15px 0px 0px 0px;
 }
 h4{
   padding: 0px;
-}
-p{
+}*/
+/*p{
   padding: 5px 0px 0px 0px;
   font-size: 0.8em;
-}
+}*/
