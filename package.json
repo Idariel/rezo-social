@@ -1,19 +1,31 @@
 {
-  "name": "rezo-social",
+  "name": "proud-tree",
   "version": "1.0.0",
-  "description": "Embryon de réseau social pour le dernier atelier de la formation DIW JS 2e session",
-  "main": "rezosocial.js",
+  "description": "My app description",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "npm test && git push heroku master",
+    "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Idariel/rezo-social.git"
+  "dependencies": {
+    "async": "^1.5.2",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.15.1",
+    "compression": "^1.6.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.13.4",
+    "express-flash": "0.0.2",
+    "express-session": "^1.2.1",
+    "express-validator": "^2.20.4",
+    "jade": "^1.11.0",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.4.8",
+    "morgan": "^1.7.0",
+    "nodemailer": "^2.3.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
   },
-  "author": "Isabelle Lechat",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Idariel/rezo-social/issues"
-  },
-  "homepage": "https://github.com/Idariel/rezo-social#readme"
+  "devDependencies": {},
+  "engines": {
+    "node": "6.1.0"
+  }
 }
