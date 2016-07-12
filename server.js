@@ -18,8 +18,6 @@ dotenv.load();
 var HomeController = require('./controllers/home');
 var userController = require('./controllers/user');
 var contactController = require('./controllers/contact');
-var cahierDesChargesController = require('./controllers/cahierDesCharges');
-
 
 // Passport OAuth strategies
 require('./config/passport');
@@ -34,7 +32,7 @@ mongoose.connection.on('error', function() {
 });
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3000 || 8080  || 80);
 app.use(compression());
 app.use(logger('dev'));
 app.use(bodyParser.json());
