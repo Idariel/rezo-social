@@ -10,25 +10,25 @@ block content
               div= error.msg
 
         form(method='POST')
-          legend Create an account
+          legend Créer un compte
           .form-group
-            label(for='name') Name
-            input.form-control(type='text', name='name', id='name', placeholder='Name', autofocus=true)
+            label(for='name') Nom
+            input.form-control(type='text', name='name', id='name', placeholder='Nom', autofocus=true)
           .form-group
             label(for='email') Email
             input.form-control(type='email', name='email', id='email', placeholder='Email')
           .form-group
-            label(for='password') Password
-            input.form-control(type='password', name='password', id='password', placeholder='Password')
+            label(for='password') Mot de passe
+            input.form-control(type='password', name='password', id='password', placeholder='Mot de passe')
           .form-group
-            small.text-muted By signing up, you agree to the <a href="/">Terms of Service</a>.
-          button.btn.btn-success(type='submit') Create an account
+            small.text-muted En vous inscrivant, vous acceptez <a href="/">les Conditions Générales d'Utilisation</a>.
+          button.btn.btn-success(type='submit') Créer un compte
 
         .hr-title
           span or
 
         .btn-toolbar.text-center
 
-    p.text-center Already have an account?&nbsp;
+    p.text-center Vous avez déjà un compte ?&nbsp;
       a(href='/login')
-        strong Log in
+        strong Connexion

@@ -12,7 +12,7 @@ nav.navbar.navbar-default.navbar-static-top
         li(class=(title == 'Home') ? 'active' : null)
           a(href='/') Accueil
         li(class=(title == 'Contact') ? 'active' : null)
-          a(href='/contact') Contact
+          a(href='/contact') Nous contacter
       ul.nav.navbar-nav.navbar-right
         if user
           li.dropdown
@@ -25,12 +25,12 @@ nav.navbar.navbar-default.navbar-static-top
               i.caret
             ul.dropdown-menu
               li
-                a(href='/account') My Account
+                a(href='/account') Mon compte
               li.divider
               li
-                a(href='/logout') Logout
+                a(href='/logout') Déconnexion
         else
-          li(class=(title == 'Log in') ? 'active' : null)
-            a(href='/login') Log in
-          li(class=(title == 'Sign up') ? 'active' : null)
-            a(href='/signup') Sign up
+          li(class=(title == 'Connexion') ? 'active' : null)
+            a(href='/login') Connexion
+          li(class=(title == 'Inscription') ? 'active' : null)
+            a(href='/signup') Inscription

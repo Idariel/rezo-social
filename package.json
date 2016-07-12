@@ -1,7 +1,8 @@
 {
-  "name": "proud-tree",
+  "name": "Rézo Social",
+  "author": "Isabelle Lechat",
   "version": "1.0.0",
-  "description": "My app description",
+  "description": "Mon réseau social",
   "scripts": {
     "deploy": "npm test && git push heroku master",
     "start": "node server.js"

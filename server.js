@@ -18,6 +18,8 @@ dotenv.load();
 var HomeController = require('./controllers/home');
 var userController = require('./controllers/user');
 var contactController = require('./controllers/contact');
+var cahierDesChargesController = require('./controllers/cahierDesCharges');
+
 
 // Passport OAuth strategies
 require('./config/passport');
@@ -65,6 +67,10 @@ app.get('/reset/:token', userController.resetGet);
 app.post('/reset/:token', userController.resetPost);
 app.get('/logout', userController.logout);
 app.get('/unlink/:provider', userController.ensureAuthenticated, userController.unlink);
+
+app.get('/views', function(req, res){
+  res.render('cahierDesCharges.jade', { title: 'cahierDesCharges' });
+});
 
 // Production error handler
 if (app.get('env') === 'production') {
