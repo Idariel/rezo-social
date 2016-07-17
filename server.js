@@ -25,14 +25,15 @@ require('./config/passport');
 var app = express();
 
 
-mongoose.connect(process.env.MONGODB);
+// mongoose.connect(process.env.MONGODB);
+mongoose.connect(process.env.MONGODB_URI); // variable d'environnement installé par mLab dans HEROKU - à voir dans settings
 mongoose.connection.on('error', function() {
   console.log('MongoDB Connection Error. Please make sure that MongoDB is running.');
   process.exit(1);
 });
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-app.set('port', process.env.PORT || 3000 || 8080  || 80);
+app.set('port', process.env.PORT || 3000);
 app.use(compression());
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -66,7 +67,7 @@ app.post('/reset/:token', userController.resetPost);
 app.get('/logout', userController.logout);
 app.get('/unlink/:provider', userController.ensureAuthenticated, userController.unlink);
 
-app.get('/views', function(req, res){
+app.get('/', function(req, res){
   res.render('cahierDesCharges.jade', { title: 'cahierDesCharges' });
 });
 

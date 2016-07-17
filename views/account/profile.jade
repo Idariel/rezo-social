@@ -33,11 +33,11 @@ block content
                 input(type='radio', checked=(user.gender == 'female'), name='gender', value='female', data-toggle='radio')
                 span Female
           .form-group
-            label.col-sm-3(for='location') Location
+            label.col-sm-3(for='location') Lieu
             .col-sm-7
               input.form-control(type='text', name='location', id='location', value=user.location)
           .form-group
-            label.col-sm-3(for='website') Website
+            label.col-sm-3(for='website') Site Web
             .col-sm-7
               input.form-control(type='text', name='website', id='website', value=user.website)
           .form-group
@@ -46,23 +46,23 @@ block content
               img(src=user.gravatar, class='profile', width='100', height='100')
           .form-group
             .col-sm-offset-3.col-sm-4
-              button.btn.btn-success(type='submit') Update Profile
+              button.btn.btn-success(type='submit') Mettre à jour le profil
 
     .panel
       .panel-body
         form.form-horizontal(method='POST', action='/account?_method=PUT')
-          legend Change Password
+          legend Modifierle mot de passe
           .form-group
-            label.col-sm-3(for='password') New Password
+            label.col-sm-3(for='password') Nouveau mot de passe
             .col-sm-7
               input.form-control(type='password', name='password', id='password')
           .form-group
-            label.col-sm-3(for='confirm') Confirm Password
+            label.col-sm-3(for='confirm') Confirmer le mot de passe
             .col-sm-7
               input.form-control(type='password', name='confirm', id='confirm')
           .form-group
             .col-sm-4.col-sm-offset-3
-              button.btn.btn-success(type='submit') Change Password
+              button.btn.btn-success(type='submit') Modifier le mot de passe
 
     .panel
       .panel-body
@@ -74,8 +74,8 @@ block content
     .panel
       .panel-body
         form.form-horizontal(method='POST', action='/account?_method=DELETE')
-          legend Delete Account
+          legend Supprimer le compte
           .form-group
-            p.col-sm-offset-3.col-sm-9 You can delete your account, but keep in mind this action is irreversible.
+            p.col-sm-offset-3.col-sm-9 Vous pouvez supprimer votre compte, mais notez bien que cette action est définitive.
             .col-sm-offset-3.col-sm-9
-              button.btn.btn-danger(type='submit') Delete my account
+              button.btn.btn-danger(type='submit') Supprimer mon compte

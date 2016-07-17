@@ -132,7 +132,8 @@ footer {
 
 .panel-title {
   font-size: 18px;
-  color: #424242;
+  /*color: #424242;*/
+  color: #white;
 }
 
 /* Buttons */
@@ -162,12 +163,12 @@ footer {
 
 .btn-success {
   border-color: #208a46;
-  background: #29b35b linear-gradient(to bottom, #2ec866, #29b35b);
+  background: #008c9f linear-gradient(to bottom, #008c9f, #008c9f);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1), inset 0 -1px 4px rgba(32, 138, 70, 0.3);
 }
 
 .btn-success:active {
-  background: #239a4e linear-gradient(to bottom, #28af59, #239a4e);
+  background: #008c9f linear-gradient(to bottom, #008c9f, #008c9f);
 }
 
 .btn-danger {
